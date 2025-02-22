@@ -1,11 +1,53 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Welcome from '../components/Welcome.astro'; // 导入欢迎组件
+import Layout from '../layouts/Layout.astro'; // 导入布局组件
 ---
 
+<head>
+	<meta charset="UTF-8"> <!-- 强制声明 UTF-8 编码 -->
+</head>
+
 <Layout>
-	<Welcome />
+	<Welcome /> <!-- 欢迎部分 -->
+	<!-- <div id="contact">
+		<a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+			<img src="github-mark.svg" alt="GitHub" width="32" height="32" /> 
+		</a>
+	</div> -->
 </Layout>
+
+<style>
+	:global(body) {
+		background-color: #f5deb3; /* 米黄色背景 */
+		margin: 0;
+		padding: 0;
+		font-family: 'Arial', sans-serif; /* 修复字体问题 */
+		color: #333; /* 字体颜色 */
+	}
+
+	Layout {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+		background-color: #ffffff; /* 白色背景 */
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		position: relative;
+	}
+
+	#contact {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	#contact a {
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	#contact a:hover {
+		color: #007acc;
+	}
+</style>
