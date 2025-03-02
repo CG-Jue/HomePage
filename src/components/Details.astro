@@ -1,13 +1,21 @@
 ---
+import avatar from '../assets/avatar.jpg'; // 导入头像图片
 ---
 
 <section id="details">
 	<h2>关于我</h2>
+	<img id="avatar" src={avatar.src} alt="头像" width="150" height="150" /> <!-- 头像图片 -->
 	<p>你好！我是一个热爱编程和设计的开发者。在这里，你可以了解我的项目、技能和联系方式。希望你能喜欢我的主页！</p>
 	<h2>联系方式</h2>
 	<div id="contact-icons">
 		<a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
 			<img src="github-mark.svg" alt="GitHub" width="32" height="32" /> <!-- GitHub 图标 -->
+		</a>
+		<a href="mailto:your-email@example.com" target="_blank" aria-label="Email">
+			<img src="email-icon.svg" alt="Email" width="32" height="32" /> <!-- Email 图标 -->
+		</a>
+		<a href="https://wpa.qq.com/msgrd?v=3&uin=yourqqnumber&site=qq&menu=yes" target="_blank" aria-label="QQ">
+			<img src="qq-icon.svg" alt="QQ" width="32" height="32" /> <!-- QQ 图标 -->
 		</a>
 	</div>
 </section>
@@ -27,6 +35,11 @@
 		font-size: 2em;
 		color: #333;
 		margin-bottom: 0.5em;
+	}
+
+	#avatar {
+		border-radius: 50%; /* 圆形头像 */
+		margin-bottom: 20px;
 	}
 
 	#details p {

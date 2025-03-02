@@ -19,7 +19,13 @@ import Details from './Details.astro'; // 导入个人介绍和联系方式组�
 
 <style>
 	#background {
-		display: none; /* 隐藏背景图片 */
+		display: block; /* 显示背景图片 */
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 
 	#container {
@@ -27,6 +33,7 @@ import Details from './Details.astro'; // 导入个人介绍和联系方式组�
 		height: 100%;
 		color: #333; /* 字体颜色 */
 		background-color: #F5F5DC; /* 背景颜色 */
+		position: relative;
 	}
 
 	main {

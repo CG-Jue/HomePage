@@ -1,20 +1,17 @@
-# Astro Starter Kit: Basics
+# Astro 入门套件：基础
 
 ```sh
 npm create astro@latest -- --template basics
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![在 StackBlitz 中打开](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![在 CodeSandbox 中打开](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![在 GitHub Codespaces 中打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 项目结构
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+在你的 Astro 项目中，你会看到以下文件夹和文件：
 
 ```text
 /
@@ -28,21 +25,21 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+要了解有关 Astro 项目文件夹结构的更多信息，请参阅[我们的项目结构指南](https://docs.astro.build/zh-cn/basics/project-structure/)。
 
-## 🧞 Commands
+## 🧞 命令
 
-All commands are run from the root of the project, from a terminal:
+所有命令都从项目的根目录在终端中运行：
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| 命令                     | 操作                                             |
+| :---------------------- | :----------------------------------------------- |
+| `npm install`           | 安装依赖                                          |
+| `npm run dev`           | 在 `localhost:4321` 启动本地开发服务器            |
+| `npm run build`         | 构建你的生产站点到 `./dist/`                      |
+| `npm run preview`       | 在部署前本地预览你的构建                          |
+| `npm run astro ...`     | 运行 CLI 命令，如 `astro add`、`astro check`      |
+| `npm run astro -- --help` | 获取使用 Astro CLI 的帮助                       |
 
-## 👀 Want to learn more?
+## 👀 想了解更多？
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+随时查看[我们的文档](https://docs.astro.build/zh-cn)或加入我们的[Discord 服务器](https://astro.build/chat)。
