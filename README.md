@@ -8,7 +8,6 @@ npm create astro@latest -- --template basics
 [![在 CodeSandbox 中打开](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
 [![在 GitHub Codespaces 中打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-
 ## 🚀 项目结构
 
 在你的 Astro 项目中，你会看到以下文件夹和文件：
@@ -18,7 +17,15 @@ npm create astro@latest -- --template basics
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── layouts/
+│   ├── assets/
+│   │   ├── avatar.jpg
+│   │   ├── background.svg
+│   │   ├── email-icon.svg
+│   │   └── github-mark.svg
+│   ├── components/
+│   │   ├── Details.astro
+│   │   ├── Welcome.astro
+│   └── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro

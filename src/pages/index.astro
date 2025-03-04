@@ -9,30 +9,26 @@ import Layout from '../layouts/Layout.astro'; // 导入布局组件
 
 <Layout>
 	<Welcome /> <!-- 欢迎部分 -->
-	<!-- <div id="contact">
-		<a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-			<img src="github-mark.svg" alt="GitHub" width="32" height="32" /> 
-		</a>
-	</div> -->
 </Layout>
 
 <style>
 	:global(body) {
-		background-color: #f5deb3; /* 米黄色背景 */
+		background-color: #0d1117; /* 深色背景 */
 		margin: 0;
 		padding: 0;
 		font-family: 'Arial', sans-serif; /* 修复字体问题 */
-		color: #333; /* 字体颜色 */
+		color: #c9d1d9; /* 字体颜色 */
 	}
 
 	Layout {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row; /* 改为左右布局 */
 		gap: 20px;
 		padding: 20px;
-		background-color: #ffffff; /* 白色背景 */
+		background-color: rgba(22, 27, 34, 0.85); /* 深色背景，带有透明度 */
+		backdrop-filter: blur(10px); /* 磨砂效果 */
 		border-radius: 8px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 		position: relative;
 	}
 
@@ -43,11 +39,11 @@ import Layout from '../layouts/Layout.astro'; // 导入布局组件
 	}
 
 	#contact a {
-		color: #333;
+		color: #58a6ff;
 		transition: color 0.3s;
 	}
 
 	#contact a:hover {
-		color: #007acc;
+		color: #1f6feb;
 	}
 </style>
