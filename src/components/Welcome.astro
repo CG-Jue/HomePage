@@ -1,5 +1,5 @@
 ---
-import background from '../assets/background.svg'; // 导入背景图片
+import background from '../assets/background.png'; // 导入背景图片
 import Details from './Details.astro'; // 导入个人介绍和联系方式组件
 ---
 
@@ -19,7 +19,7 @@ import Details from './Details.astro'; // 导入个人介绍和联系方式组�
 
 <style>
 	#background {
-		display: block; /* 显示背景图片 */
+		display: none; /* 隐藏背景图片 */
 		width: 100%;
 		height: auto;
 		position: absolute;
@@ -40,6 +40,7 @@ import Details from './Details.astro'; // 导入个人介绍和联系方式组�
 	main {
 		height: 100%;
 		display: flex;
+		flex: 1;
 		flex-direction: row; /* 改为左右布局 */
 		justify-content: center;
 		align-items: center;
@@ -86,8 +87,12 @@ import Details from './Details.astro'; // 导入个人介绍和联系方式组�
 				setTimeout(typeWriter, 365); // 每个字母显示的时间间隔
 			} else {
 				const details = document.getElementById('details');
+				const tools = document.getElementById('tools');
 				if (details) {
 					details.classList.add('show'); // 显示个人介绍和联系方式
+				}
+				if (tools) {
+					tools.classList.add('show'); // 显示个人介绍和联系方式
 				}
 				title.style.display = 'none'; // 隐藏“欢迎光临”
 			}
